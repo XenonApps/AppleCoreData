@@ -6,14 +6,17 @@
 //
 
 import Foundation
+import CoreData
 
 
 public class Store {
     
-    var name: String = "AppleCoreData"
-    var isPreview: Bool
+    let name: String = "AppleCoreData"
+    public let isPreview: Bool
+    var controller: PersistenceController
     
     init(isPreview: Bool = true) {
         self.isPreview = isPreview
+        self.controller = isPreview ? PersistenceController.preview : PersistenceController.shared
     }
 }

@@ -11,6 +11,8 @@
 		6B0A09482781D99F004F7DE8 /* AppleCoreDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A09472781D99F004F7DE8 /* AppleCoreDataModelTests.swift */; };
 		6B0A09492781D99F004F7DE8 /* AppleCoreDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0A093D2781D99F004F7DE8 /* AppleCoreDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B0A09532781D9F5004F7DE8 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A09522781D9F5004F7DE8 /* Store.swift */; };
+		6B0A09572781DFB3004F7DE8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A09542781DFB2004F7DE8 /* Persistence.swift */; };
+		6B0A09582781DFB3004F7DE8 /* AppleCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A09552781DFB2004F7DE8 /* AppleCoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		6B0A09422781D99F004F7DE8 /* AppleCoreDataModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleCoreDataModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0A09472781D99F004F7DE8 /* AppleCoreDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCoreDataModelTests.swift; sourceTree = "<group>"; };
 		6B0A09522781D9F5004F7DE8 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		6B0A09542781DFB2004F7DE8 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6B0A09562781DFB2004F7DE8 /* AppleCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppleCoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				6B0A093D2781D99F004F7DE8 /* AppleCoreDataModel.h */,
 				6B0A09522781D9F5004F7DE8 /* Store.swift */,
+				6B0A09552781DFB2004F7DE8 /* AppleCoreData.xcdatamodeld */,
+				6B0A09542781DFB2004F7DE8 /* Persistence.swift */,
 			);
 			path = AppleCoreDataModel;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B0A09532781D9F5004F7DE8 /* Store.swift in Sources */,
+				6B0A09572781DFB3004F7DE8 /* Persistence.swift in Sources */,
+				6B0A09582781DFB3004F7DE8 /* AppleCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +482,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B0A09552781DFB2004F7DE8 /* AppleCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B0A09562781DFB2004F7DE8 /* AppleCoreData.xcdatamodel */,
+			);
+			currentVersion = 6B0A09562781DFB2004F7DE8 /* AppleCoreData.xcdatamodel */;
+			path = AppleCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6B0A09312781D99F004F7DE8 /* Project object */;
 }
