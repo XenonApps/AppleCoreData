@@ -33,7 +33,11 @@ struct PersistenceController {
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "AppleCoreData")
         if inMemory {
-            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+            if let firstDescription = container.persistentStoreDescriptions.first {
+                firstDescription.url = URL(fileURLWithPath: "/dev/null")
+            } else {
+                container.persistentStoreDescriptions.append(NSPersistentStoreDescription(url: URL(fileURLWithPath: "/dev/null")))
+            }
         }
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
